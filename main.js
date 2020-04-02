@@ -1,4 +1,4 @@
-function Carousel(){
+function Banner(){
     var x1={
       container:'#box',
       timer:1000,
