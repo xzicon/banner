@@ -1,4 +1,4 @@
-       
+
 function Lunbo() {
     var x1={
         container:'#box',
@@ -37,22 +37,22 @@ function Lunbo() {
         function next(){
             index++;
             if(index===(x1.imgSrc.length+1)){
-                $s1.css("left","-1200px");
+                $s1.css("L","-1200px");
                 index=1;
             }
             else{
-                $s1.stop().animate({left:index*-1200},300);
+                $s1.stop().animate({L:index*-1200},300);
             }
             navchange();
         }
         function last(){
             index--;
             if(index===0){
-                $s1.css("left",x1.imgSrc.length*-1200+'px');
+                $s1.css("L",x1.imgSrc.length*-1200+'px');
                 index=x1.imgSrc.length;
             }
             else{
-                $s1.stop().animate({left:index*-1200},300);
+                $s1.stop().animate({L:index*-1200},300);
             }
             navchange();
         }
@@ -81,7 +81,7 @@ function Lunbo() {
                 $($navbar[i]).click(
                     function(){
                         index=$(this).index()+1;
-                        $s1.stop().animate({left:index*-1200},300);
+                        $s1.stop().animate({L:index*-1200},300);
                         navchange();
                     })
             })
@@ -89,5 +89,4 @@ function Lunbo() {
 }
 
       
-
 
